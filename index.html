@@ -11,41 +11,49 @@
 </head>
 
 <body>
-    <img class="background" src="images/yannic-laderach-Dqx4XWuXu7w-unsplash.jpg" alt="yoga pose">
+    <div class="background">
+        <img class="background-image" src="images/yannic-laderach-Dqx4XWuXu7w-unsplash.jpg" alt="yoga pose">
+        <img class="logo" src="images/odin-lined.png" alt="logo">
+    </div>
     <div class="content">
-        <p>This is Not a real service. Do you need relaxation after a long day at work? Do you need a quick and fast
-            workout
-            you can do from your own home!</p>
-        <p>Sign-up now and get started!</p>
+        <div class="text">
+            <p>This is Not a real service. Do you need relaxation after a long day at work? Do you need a quick and fast
+                workout
+                you can do from your own home? Try yoga. I believe in yoga.</p>
+            <p>Sign-up now and get started!</p>
+        </div>
         <form action="sumbit">
             <div class="first-row">
                 <div class="column">
                     <label for="first-name">First Name</label>
-                    <input type="text" name="name" id="first-name">
+                    <input type="text" name="name" id="first-name" required>
                 </div>
                 <div class="column">
                     <label for="last-name">Last name</label>
-                    <input type="text" name="'lastname" id="last-name">
-                </div>
-                <div class="column">
-                    <label for="pw">Password</label>
-                    <input type="password" name="password" id="pw">
+                    <input type="text" name="'lastname" id="last-name" required>
                 </div>
             </div>
             <div class="second-row">
                 <div class="column">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <label for="pw">Password</label>
+                    <input type="password" name="password" id="pw" required>
                 </div>
+                <div class="column">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+            </div>
+            <div class="third-row">
                 <div class="column">
                     <label for="phone">Phone number</label>
                     <input type="number" name="phone-number" id="phone">
                 </div>
                 <div class="column">
-                    <label for="pwconfirm">Password confirmation</label>
-                    <input type="password" name="password-confirmation" id="pwconfirm">
+                    <label for="pwconfirm">Confirm password</label>
+                    <input type="password" name="password-confirmation" id="pwconfirm" required>
                 </div>
             </div>
+            <button type="submit">Sign up</button>
         </form>
     </div>
 
