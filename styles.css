@@ -18,6 +18,13 @@
 
 h1 {
     font-family: 'Norse';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    width: 100%;
+    top: 15%;
+    font-size: 150px;
 }
 
 .background {
@@ -26,7 +33,7 @@ h1 {
 }
 
 .logo {
-    position: absolute;
+    position: relative;
     top: 0;
 }
 
